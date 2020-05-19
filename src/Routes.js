@@ -8,8 +8,8 @@ import Signup from './views/Signup';
 
 export default [
   <React.Fragment>
-      <Route exact path="/" component={ Home } ></Route>
-      <Route exact path="/login" component={ Login } ></Route>
+      <Route exact path="/" component={ Login } ></Route>
+      <Route exact path="/home" component={ Home } ></Route>
       <Route exact path="/signup" component={ Signup } ></Route>
   </React.Fragment>
 ];

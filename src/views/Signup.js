@@ -51,7 +51,7 @@ const Signup = () => {
 
   return (
     <React.Fragment>
-      <h1 className="mb-4">Signup on Maui App</h1>
+      <h1 className="mb-4">Sign Up</h1>
       <Form onSubmit={handleSubmit}>
         <FormGroup>
           <Label>First Name</Label>
