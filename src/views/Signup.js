@@ -9,6 +9,7 @@ import {
 } from 'reactstrap';
 
 const Signup = () => {
+  const [userName, setUserName] = useState('');
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
@@ -16,6 +17,10 @@ const Signup = () => {
 
   const handleInput = (e) => {
     switch (e.target.name) {
+
+      case "inputUserName":
+        setUserName(e.target.value)
+        break;
       case "inputFirstName":
         setFirstName(e.target.value)
         break;
@@ -36,13 +41,14 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const jsonSend = {
+      user_name: userName,
       first_name: firstName,
       last_name: lastName,
       email,
       password,
     }
     try {
-      const res = await axios.post('https://cinta-negra-backend.herokuapp.com/api/v1/users/signup', jsonSend);
+      const res = await axios.post('https://bonini81-backend.herokuapp.com/api/v1/users/signup', jsonSend);
       alert('Successful signup')
     } catch (error) {
       alert('Error on signup')
@@ -53,6 +59,17 @@ const Signup = () => {
     <React.Fragment>
       <h1 className="mb-4">Sign Up</h1>
       <Form onSubmit={handleSubmit}>
+
+      <FormGroup>
+          <Label>UserName</Label>
+          <Input 
+            type="text"
+            id="userName"
+            name="inputUserName" 
+            placeholder="type your user name"
+            value={userName}
+            onChange={handleInput} />
+        </FormGroup>
         <FormGroup>
           <Label>First Name</Label>
           <Input 
