@@ -14,11 +14,11 @@ function App() {
     <Fragment>
       <Router>
         <Navigation />
-        <Container className="mt-4">
+       
           <Switch>
             { Routes }
           </Switch>
-        </Container>
+  
         <Footer />
       </Router>
     </Fragment>

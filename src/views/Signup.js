@@ -57,8 +57,9 @@ const Signup = () => {
 
   return (
     <React.Fragment>
+      <section className="form-signup">
       <h1 className="mb-4">Sign Up</h1>
-      <Form onSubmit={handleSubmit}>
+      <Form onSubmit={handleSubmit} >
 
       <FormGroup>
           <Label>UserName</Label>
@@ -112,6 +113,7 @@ const Signup = () => {
         </FormGroup>
         <Button>Submit</Button>
       </Form>
+      </section>
     </React.Fragment>
   );
 }
