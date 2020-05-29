@@ -48,10 +48,10 @@ const LinkUpload = () => {
      
       }
       try {
-        const res = await axios.post('https://bonini81-backend.herokuapp.com/api/v1/users/signup', jsonSend);
-        alert('Successful signup')
+        const res = await axios.post('https://bonini81-backend.herokuapp.com/api/v1/enlaces', jsonSend);
+        alert('Successfully Added the Link')
       } catch (error) {
-        alert('Error on signup')
+        alert('Error on Adding Link')
       }
     }
    
@@ -68,8 +68,8 @@ const LinkUpload = () => {
           <Label>Add your Link Title</Label>
           <Input 
             type="text"
-            id="inputLinkTitle"
-            name="linkTitle" 
+            id="linkTitle"
+            name="inputLinkTitle" 
             placeholder="type your link Title"
             value={linkTitle}
             onChange={handleInput} />
@@ -78,8 +78,8 @@ const LinkUpload = () => {
           <Label>Link Url</Label>
           <Input
             type="text" 
-            name="linkUrl" 
-            id="inputLinkUrl" 
+            name="inputLinkUrl" 
+            id="linkUrl" 
             placeholder="type the link url"
             value={linkUrl}
             onChange={handleInput} />
@@ -88,8 +88,8 @@ const LinkUpload = () => {
           <Label>Link Description</Label>
           <Input
             type="text"
-            name="linkDescription"
-            id="inputLinkDescription"
+            name="inputLinkDescription"
+            id="linkDescription"
             placeholder="type your link description"
             value={linkDescription}
             onChange={handleInput} />
@@ -98,8 +98,8 @@ const LinkUpload = () => {
           <Label>Add Tag</Label>
           <Input
             type="text"
-            name="linkTag"
-            id="inputLinkTag"
+            name="inputLinkTag"
+            id="linkTag"
             placeholder="type your link tag"
             value={linkTag}
             onChange={handleInput} />
