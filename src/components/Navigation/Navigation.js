@@ -34,6 +34,10 @@ const Navigation = (props) => {
           <NavItem>
             <NavLink tag={Link} to="/signup">Signup</NavLink>
           </NavItem>
+          <NavItem>
+            <NavLink tag={Link} to="/linkupload">Add my Link</NavLink>
+          </NavItem>
+
         </Nav>
       </Collapse>
     </Navbar>
