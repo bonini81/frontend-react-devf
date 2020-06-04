@@ -37,7 +37,9 @@ const Navigation = (props) => {
           <NavItem>
             <NavLink tag={Link} to="/linkupload">Add my Link</NavLink>
           </NavItem>
-
+          <NavItem>
+            <NavLink tag={Link} to="/booklist">Book List</NavLink>
+          </NavItem>
         </Nav>
       </Collapse>
     </Navbar>

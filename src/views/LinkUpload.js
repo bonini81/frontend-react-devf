@@ -58,7 +58,7 @@ const LinkUpload = () => {
 
 
   return (
-    <React.Fragment>
+    <>
         <section className="form-signup">
       <h1 className="mb-4">Add your Link</h1>
       <Form onSubmit={handleSubmit} >
@@ -110,7 +110,7 @@ const LinkUpload = () => {
       </Form>
       </section>
 
-    </React.Fragment>
+    </>
   );
 }
  
