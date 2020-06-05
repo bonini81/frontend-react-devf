@@ -10,10 +10,10 @@ const Book  = ( props ) => {
   
   <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
   <p className="card-link">Categoría: <a href="#" >Card link</a></p>
-  <span>Autor</span>
-  <span>{ props.author }</span>
-	<span>Title</span>
-	<span>{ props.title }</span>
+  <span>Title</span>
+  <span>{ props.link_title }</span>
+	<span>Tag</span>
+	<span>{ props.tag }</span>
 </div>
 </div>
 
