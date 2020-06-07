@@ -31,24 +31,27 @@ useEffect(() => {
     return ( 
          
       
-<React.Fragment>
+<div className="container width-adb">
+	<div className="row">
+		<div className="col-12">
 
-    <h1>Available Links My Man</h1>
-    <h2> { text } </h2>
+    <h1 className="titulos-cards">Available Links My Man</h1>
+    <h2 className="titulos-cards"> { text } </h2>
 { links.map((link) => {
 	return <Book
-	key={link._id}
-	link_title={link.link_title}
-	tag={link.tag}
-	/>
-})}
+	key= { link._id }
+	title= { link.link_title }
+	description= { link.link_description }
+	tag= { link.tag }
+	link= { link.link_url }
 	
+	/>
 
+})}
 
-
-        
-
-</React.Fragment>
+</div>
+</div>
+</div>
 
      );
 } 
