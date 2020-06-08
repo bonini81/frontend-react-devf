@@ -11,11 +11,7 @@ const BookList = () => {
 
     const getLinks = () => axios.get('https://bonini81-backend.herokuapp.com/api/v1/enlaces/');
        
-        
-
-      
-
-
+             
 useEffect(() => {
 
 	getLinks()

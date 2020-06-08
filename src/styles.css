@@ -20,7 +20,12 @@ tr.cells1 {
 
     margin: 2%;
     background-color: rgba(0,0,0,.05) !important;
-    
+  
+}
+
+.section-links-adb {
+
+    position: relative !important;
 
 }
 
@@ -50,14 +55,22 @@ section.form-signup {
 
 }
 
-.width-adb {
-
-    padding: 5%;
+nav.fixed-bottom {
+    position: absolute;
+   
 
 }
 
 .titulos-cards {
-
+ 
     text-align: center;
+
+}
+
+
+.estilo-cards-adb {
+
+    color: #007bff;
+   
 
 }
