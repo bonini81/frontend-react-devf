@@ -4,8 +4,10 @@
     width: 100%;
     max-width: 530px;
     padding: 15px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 10%;
+    margin-bottom: 20%;
 
 }
 
@@ -20,7 +22,12 @@ tr.cells1 {
 
     margin: 2%;
     background-color: rgba(0,0,0,.05) !important;
-    
+  
+}
+
+.section-links-adb {
+
+    position: relative !important;
 
 }
 
@@ -46,6 +53,29 @@ section.form-signup {
     width: 70%;
     max-width: 650px;
     padding: 15px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 10%;
+
+}
+
+nav.fixed-bottom {
+    position: relative;
+   
+
+}
+
+.titulos-cards {
+ 
+    text-align: center;
+
+}
+
+
+.estilo-cards-adb {
+
+    color: #007bff;
+   
 
 }
